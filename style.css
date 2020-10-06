@@ -1,0 +1,767 @@
+body{
+  margin: 0;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #333;
+}
+
+header{
+  background-color:#fff;
+  color: #333;
+  text-align: center;
+  position: -webkit-sticky;
+    position:sticky; 
+    top:0; 
+    z-index: 100; 
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+
+header .menu{
+  background: #fff;
+  color: #333;
+  display: flex;
+}
+.menubtn img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 32px;
+}
+.menu img:hover{
+  opacity: 0.7;
+}
+.menumoji{
+  display:flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 16px;
+}
+.menumoji a{
+  color: #333;
+  font-size: 20px;
+  font-weight:bold;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  justify-content: space-between;
+  margin:32px;
+}
+
+.gaiyou{
+  color: #333;
+  opacity: 1.0;
+  margin: auto;
+}
+.gaiyou:hover{
+  opacity: 1.0;
+}
+.junbi{
+  opacity: 0.7;
+  margin: auto;
+}
+.junbi:hover{
+  opacity: 1.0;
+}
+.anzen{
+  opacity: 0.7;
+  margin: auto;
+}
+.anzen:hover{
+  opacity: 1.0;
+}
+.moneyplan{
+  opacity: 0.7;
+  margin: auto;
+}
+.moneyplan:hover{
+  opacity: 1.0;
+}
+
+
+.house img{
+  background-size: cover;
+  min-width:100vw;
+  /* height: 100vh; */
+  border-radius: 16px;
+  margin: 20px;
+}
+
+.info{
+  border-bottom: solid;
+  border-width: thin;
+}
+
+.placeinfo{
+  border: none;
+  border-bottom: solid 2px gray;
+  border-width: thin;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+.placeinfo span{
+  color: tomato;
+}
+
+.placeinfo a{
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.customerinfo{
+  font-size: large;
+  font-weight: normal;
+}
+
+.customerinfodetail{
+  margin: 20px;
+  font-size: 30px;
+}
+
+
+.house img{
+  width: 100vh;
+}
+
+.infobox{
+  border-radius: 8px;
+}
+
+.infobox{
+  min-width:100px;
+  border: solid;
+  border-width: thin;
+  border-radius: 16px;
+  border-style: groove;
+  margin: 40px;
+}
+
+.placebox{
+  height: 50px;
+  border-bottom: solid,groove;
+  border-width: thin;
+  padding: 10px;
+}
+
+input[type="text"]{
+  border: none;
+  font-size: 30px;
+}
+.roomtype{
+  height: 50px;
+  border-bottom: solid;
+  border-width: thin;
+  border-style: groove;
+  padding: 10px;
+}
+
+select[name="個室"]{
+  border: none;
+  font-size: 30px;
+}
+
+.guest{
+  height: 50px;
+  padding: 10px;
+}
+
+select[name="ゲスト"]{
+  border: none;
+  font-size: 30px;
+}
+
+.guestdetail{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+}
+
+.customerinfo .button1{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 30px;
+  background-color:#E61E4D;
+  color: #fff;
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 40px 0;
+  height: 80px;
+}
+
+@media(min-width:600px){
+.toppart{
+  margin-bottom: 700px;
+}
+.house{
+  position: absolute;
+}
+.info{
+  position: relative;
+  background-color:#fff ;
+  top: 600px;
+  border-radius: 15px;
+}
+}
+
+@media(min-width:800px){
+  .house{
+    position: absolute;
+  }
+  .info{
+    width: auto;
+    display: flex;
+    position: relative;
+    background-color:#fff;
+    top: 600px;
+    left: 200px;
+  }
+  .customerinfodetail{
+    font-size: 20px;
+  }
+  .button1{
+    width: fit-content;
+  }
+}
+
+.reason h1{
+  font-size: 30px;
+  margin: 40px;
+}
+
+.reason p{
+  font-size: 15px;
+  margin: 40px;
+}
+
+.ease h1{
+  font-size: 30px;
+  margin: 40px;
+}
+
+.ease p{
+  font-size: 15px;
+  margin: 40px;
+  margin-bottom: 100px;
+}
+
+.hosting h1{
+  font-size: 40px;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+  margin-top: 2em;
+}
+
+.hosting :before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -15%;
+  display: inline-block;
+  width: 300px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+
+.hosting ul{
+  list-style: none;
+}
+
+.hosting ul img{
+  width: 40px;
+  border-radius: 50%;
+}
+
+.hosting ul h2{
+  font-size: 20px;
+}
+.hosting ul p{
+  font-size: 15px;
+}
+.startcheck{
+  color: darkslategrey;
+  font-size: 15px;
+  margin: 100px;
+  margin-bottom: 200px;
+}
+.startcheck:hover{
+  cursor: pointer;
+  /* text-decoration: underline; */
+}
+
+@media(min-width:800px){
+  .hosting {
+    text-align: center;  
+  }
+  .hosting ul{
+    display: flex;
+  }
+}
+
+.hostexample1{
+  /* display: flex; */
+}
+.hostexample1 h2{
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 20px;
+}
+.hostexample1 h3{
+  font-size: 15px;
+  font-weight: lighter;
+  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.hostexample1 img{
+  width: 100vh;
+  margin: 20px;
+  margin-top: 200px;
+}
+.btn--white,
+a.btn--white{
+  color: darkgreen;
+  font-size: 20px;
+  font-weight: bold;
+  border: solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: fit-content;
+}
+.btn--white,
+a.btn--white:hover{
+  cursor: pointer;
+}
+
+@media(min-width:800px){
+  .hostexample1{
+    display: flex;
+  }
+  .hostexample1 img{
+    margin-top: none;
+  }
+  .hostingexample1detail{
+    margin-top: 200px;
+  }
+}
+
+.guarantee{
+  font-size: 40px;
+  margin: 20px;
+  margin-top: 150px;
+}
+
+.guarantee h1{
+  font-size: 40px;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+  margin-top: 2em;
+}
+
+.guarantee :before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -15%;
+  display: inline-block;
+  width: 300px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+.guarantee h2{
+  font-weight: lighter;
+  font-size: 20px;
+}
+.guarantee .btn{
+  font-size: 20px;
+}
+.guarantee .btntitle{
+  color: darkgreen;
+}
+.guarantee .btntitle:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.guarantee .btn li{
+  list-style: none;
+  font-size: 50px;
+  display: flex;
+}
+.guarantee .btn li img{
+  width: 20px;
+  height: 20px;
+  padding-top: 25px;
+  padding-right: 50px;
+}
+.btn ul h3{
+  font-size: 20px;
+}
+.guaranteeimg{
+  width: 100vh;
+  margin: 40px;
+}
+@media(min-width:600px){
+  .guaranteetitle{
+    text-align: center;
+  }
+  .guaranteecontent{
+    display: flex;
+  }
+  .guaranteecontent h2{
+    width: 700px;
+  }
+  .g1{
+    display:flex;
+    font-size: 15px;
+    padding: 0 5px 0 50px;
+    height: fit-content;
+  }
+  .g1 img{
+    width: 20px;
+    height: 20px;
+    padding-top: 18px;
+    padding-right: 15px;
+  }
+  .guaranteeimg{
+    /* background-size: cover; */
+    min-width:100vw;
+  }
+}
+
+.payment :before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -15%;
+  display: inline-block;
+  width: 300px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+
+.payment h1{
+  font-size: 40px;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+  margin-top: 2em;
+}
+.paymentdetail ul h2{
+  font-size: 40px;
+}
+.paymentdetail ul h3{
+  font-size: 20px;
+  font-weight: lighter;
+}
+.payment .paymentdetail ul{
+  list-style: none;
+}
+.paymentdetail .btn{
+  font-size: 20px;
+  color: darkgreen;
+  margin: 40px;
+}
+.paymentdetail .btn:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media(min-width:800px){
+  .payment {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .paymentdetail{
+    display: flex;
+    margin: 0 20px 30px 20px;
+  }
+  .p1{
+    padding: 20px;
+  }
+  .btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.hostexample2 img{
+  width: 100vh;
+  margin: 40px;
+}
+.hostexample2 h2{
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 40px;
+}
+.hostexample2 h3{
+  font-size: 15px;
+  margin: 40px;
+}
+.hostexample2 .btn{
+  font-size: 20px;
+  margin: 40px;
+}
+@media(min-width:800px){
+  .hostexample2{
+    display: flex;
+  }
+}
+.about :before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -15%;
+  display: inline-block;
+  width: 300px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+
+.about h1{
+  font-size: 40px;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+  margin-top: 2em;
+}
+
+.about ul{
+  list-style: none;
+}
+.aboutdetail ul h2{
+  font-size: 40px;
+}
+.aboutdetail ul h3{
+  font-size: 20px;
+  font-weight: lighter;
+}
+.aboutdetail .btn{
+  font-size: 20px;
+  color: darkgreen;
+  margin: 40px;
+}
+.aboutdetail .btn:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media(min-width:800px){
+  .about{
+    text-align: center;
+  }
+  .aboutdetail{
+    display:flex;
+  }
+  .a1{
+    margin: 40px;
+    padding: 0 20px;
+  }
+}
+
+.question :before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -15%;
+  display: inline-block;
+  width: 300px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+
+.question h1{
+  font-size: 40px;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+  margin-top: 2em;
+}
+.question ul li{
+  color: darkgreen;
+  list-style: none;
+  font-size: 15px;
+  margin:20px;
+  padding: 20px 0;
+  border-bottom: solid;
+  border-color: darkgrey;
+}
+.li1:hover,
+.li2:hover,
+.li3:hover,
+.li4:hover,
+.li5:hover,
+.li6:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media(min-width:800px){
+  .question{
+    text-align: center;
+
+  }
+  .q1{
+    display: flex;
+    margin-left: 220px;
+    
+  }
+  .q1:hover{
+
+  }
+  .q2 h2{
+    width: fit-content;
+    padding: 0px 40px;
+    font-size: 25px;
+    font-weight: lighter;
+    padding-bottom: solid;
+  }
+}
+
+.detail {
+  margin: 200px 40px;
+}
+.detail h2{
+  font-size: 30px;
+}
+.setting1,.security1,.moneypl1{
+  display: flex;
+  font-size: 13px;
+  border: none ;
+  border-radius: 10px;
+  box-shadow: 3px 5px 3px 5px rgba(0, 0, 0, 0.4);
+  margin: 20px 40px;
+}
+
+.setting1,.security1,.moneypl1:hover{
+  cursor: pointer;
+}
+
+.detailcontent img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.detailcontent h4{
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+@media(min-width:800px){
+  .detail{
+    text-align: center;
+  }
+  .detailcontent{
+    display: flex;
+    margin-left: 240px;
+  }
+}
+
+@media(min-width:800px){
+  .setting1,.security1,.moneypl1{
+    display: block;
+    width: 300px;
+    border: none;
+    box-shadow: none;
+    font-size: 40px;
+  }
+  .detailcontent img{
+    width: 180px;
+    height: 180px;
+  }
+  .detailcontent h4{
+    font-size: 30px;
+  }
+}
+.start{
+  position: relative;
+  text-align: center;
+}
+
+.start img{
+  width: 100vw;
+  margin:40px 30px;
+}
+.startword{
+  position: absolute;
+  top: 220px;
+  left: 70px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.startbtn{
+  position: absolute;
+  top: 300px;
+  left: 70px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 30px;
+  box-sizing: content-box;
+  padding: 20px;
+}
+.startbtn:hover{
+  cursor: pointer;
+}
+
+
+footer{
+  font-size: 20px;
+  padding: 64px 0;
+  background: #323135;
+  color: #98969c;
+  text-align: left;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer .bottom:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.companyinfo,.community,.host,.support,.bottom{
+  margin-left: 20px;
+}
+@media(min-width:800px){
+   .fcontent{
+     display: flex;
+   }
+   footer{
+     font-size: 15px;
+   }
+}
